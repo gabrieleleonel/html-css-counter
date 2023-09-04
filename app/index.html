@@ -9,16 +9,16 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <div>
+    <div class="container">
       <div>
-        <h1>Counter</h1>
+        <h1 class="title">Counter</h1>
       </div>
-      <div>
-        <p id="counterView">0</p>
-        <button id="btnAdd" onclick="btnAction('add')">+</button>
-        <button id="btnReset" onclick="btnAction('reset')">RESET</button>
-        <button id="btnSub" onclick="btnAction('sub')">-</button>
+      <div class="counter">
+        <button id="btnAdd" class="increment-btn" onclick="btnAction('add')">+</button>
+        <div id="counterView" class="counter-value">0</div>
+        <button id="btnSub" class="decrement-btn" onclick="btnAction('sub')">-</button>
       </div>
+      <button id="btnReset" class="reset" onclick="btnAction('reset')">Reset</button>
     </div>
   </body>
 </html>
